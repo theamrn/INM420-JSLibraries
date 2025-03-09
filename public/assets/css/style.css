@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #222;
+}
+
+/* Carousel Section - Fullscreen */
+.carousel-section {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+/* Glide Carousel - Properly Scaled */
+.glide__slide img {
+    width: 100vw; 
+    height: 90vh;  
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive Carousel Height */
+@media (max-width: 768px) {
+    .glide__slide img {
+        height: 60vh; 
+    }
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+    color: #222;
+}
+
+/* Destination Grid - Modern Card Layout */
+.destination-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Destination Card */
+.destination {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 350px;
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+/* Hover Effect */
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.destination img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Title Styling */
+.destination h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.destination p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Destination Layout */
+@media (max-width: 768px) {
+    .destination-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination {
+        width: 90%;
+    }
+}
+
+/* Map Section */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    color: #333;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    margin-top: auto; 
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1 1 250px;
+    text-align: left;
+}
+
+/* Footer Headings */
+.footer-section h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Footer Links */
+.footer-section p,
+.footer-section a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media & Quick Links */
+.social-media,
+.quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li,
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
